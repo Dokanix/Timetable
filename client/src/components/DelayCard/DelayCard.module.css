@@ -1,0 +1,48 @@
+.card {
+  border: 6px solid rgb(59, 57, 63);
+  cursor: pointer;
+}
+
+.heading {
+  background-color: white;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.content {
+  padding: 0.5rem 1rem;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+  width: 0;
+}
+
+.delay {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+  font-family: monospace;
+  font-size: 1.2rem;
+  color: orange;
+}
+
+.delay > * {
+  flex-basis: 0;
+}
+
+.delay > *:first-child,
+.delay > *:last-child {
+  flex-grow: 1;
+}
+
+.delay > *:nth-child(2) {
+  flex-grow: 4;
+  text-align: center;
+}
+
+.delay > *:last-child {
+  text-align: right;
+}

@@ -1,0 +1,80 @@
+.container {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.success {
+  color: rgb(52, 207, 148);
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error {
+  color: rgb(255, 112, 160);
+  margin-bottom: 0.5rem;
+  height: 1.5rem;
+}
+
+.heading {
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.form {
+  position: relative;
+}
+
+.label {
+  margin-bottom: 1rem;
+}
+
+.close {
+  position: absolute;
+  color: rgb(110, 106, 106);
+  top: -1.5rem;
+  right: -1.5rem;
+  font-weight: light;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.input {
+  background-color: transparent;
+  border: 1px solid #555151;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  min-width: 250px;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.modal {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  background-color: rgb(51, 49, 49);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.submit {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: rgb(52, 207, 148);
+  border: none;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.main {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+.heading {
+  font-size: 4rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1rem;
+}
