@@ -5,6 +5,7 @@ import styles from './StopsTable.module.css';
 
 interface StopsTableProps {
   stops: Stop[];
+  selected: number[];
   onClick: (id: number) => void;
 }
 
@@ -39,7 +40,9 @@ export default function StopsTable(props: StopsTableProps) {
       {filteredStops.map((stop) => (
         <div
           key={stop.stopId}
-          className={styles.stop}
+          className={`${styles.stop} ${
+            props.selected.includes(stop.stopId) ? styles.selected : ''
+          }`}
           onClick={() => props.onClick(stop.stopId)}
         >
           <div>{stop.stopName}</div>

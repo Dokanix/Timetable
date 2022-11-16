@@ -96,7 +96,11 @@ function App() {
       />
       <Main heading='Timetable'>
         <DelayTables onClick={handleUnselectStop} stops={selectedStops} />
-        <StopsTable onClick={handleSelectStop} stops={stops} />
+        <StopsTable
+          onClick={handleSelectStop}
+          stops={stops}
+          selected={selectedStopsIds}
+        />
       </Main>
     </div>
   );

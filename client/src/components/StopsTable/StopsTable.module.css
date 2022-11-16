@@ -36,6 +36,15 @@
   background-color: #383434;
 }
 
+.selected {
+  opacity: 0.2;
+  cursor: default;
+}
+
+.selected:hover {
+  background-color: transparent;
+}
+
 .stop > * {
   flex-basis: 0;
 }
