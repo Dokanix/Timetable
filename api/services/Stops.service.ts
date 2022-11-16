@@ -14,7 +14,7 @@ const getDelays = async (id: number) => {
     throw new Error('No delays found for stop');
   }
 
-  return delaysResponse.delays;
+  return delaysResponse.delay;
 };
 
 const getStops = async (date?: Date) => {
