@@ -14,30 +14,6 @@ const getDelays = async (id: number) => {
     throw new Error('No delays found for stop');
   }
 
-  return [
-    {
-      delayInSeconds: -10,
-      estimatedTime: '10:00',
-      theoreticalTime: '10:10',
-      headsign: 'Jelitkowo',
-      routeId: 1,
-    },
-    {
-      delayInSeconds: 10,
-      estimatedTime: '10:00',
-      theoreticalTime: '09:50',
-      headsign: 'Wrzeszcz',
-      routeId: 2,
-    },
-    {
-      delayInSeconds: 0,
-      estimatedTime: '10:00',
-      theoreticalTime: '10:00',
-      headsign: 'Opera Bałtycka',
-      routeId: 3,
-    },
-  ];
-
   return delaysResponse.delays;
 };
 
